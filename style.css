@@ -261,6 +261,9 @@ p { margin: 0 0 1em; }
   font-size: clamp(2.4rem, 4.5vw, 3.6rem);
   margin-bottom: 0.3rem;
 }
+.hero__inner--centered .hero__title {
+  font-size: clamp(2.8rem, 5.5vw, 4.4rem);
+}
 
 .hero__tagline {
   font-family: var(--font-serif);
@@ -280,6 +283,22 @@ p { margin: 0 0 1em; }
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.hero__inner--centered {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+  max-width: 960px;
+}
+.hero__inner--centered .hero__desc {
+  max-width: 62ch;
+  font-size: 1.15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero__inner--centered .hero__actions {
+  justify-content: center;
 }
 
 .hero__visual {
